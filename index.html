@@ -1,0 +1,66 @@
+<html>
+    <head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="font/css/all.min.css">
+    </head>
+    <body>
+       
+       <div class="w-75 m-auto py-5" >
+            <label for="productname">productname:</label>
+            <input type="text" id="productname" class="form-control mb-3">
+            <div class="alert alert-danger d-none" id="fire">
+                <p>the first digit must be capital then the others must be small</p>
+            </div>
+       
+            <label for="productprice">productprice:</label>
+            <input type="text" id="productprice" class="form-control mb-3">
+            <div class="alert alert-danger d-none" id="alarm">
+                <p>the all digits must contain numbers only</p>
+            </div>
+    
+            <label for="productcategory">productcategory:</label>
+            <input type="text" id="productcategory" class="form-control mb-3">
+            <div class="alert alert-danger d-none" id="bad">
+                <p>the first digit must be capital then the others must be small</p>
+            </div>
+           
+            <label for="productdesc">productdescription:</label>
+            <textarea type="text" id="productdesc" class="form-control mb-3"></textarea>
+      
+            <div class="alert alert-danger d-none" id="watch">
+                <p>the first digit must be capital then the others must be small</p>
+            </div>
+            <button  onclick= "addproduct();" class="btn btn-outline-info mb-3 ">addproduct</button>
+      
+            <div class="w-50 m-auto p-3" >
+            <input onkeyup="searchproduct(term)" id="searchproduct" type="text" placeholder="search..." class="form-control m-auto ">
+        </div>
+        <table class="table my-5 align-items-center">
+            <thead>
+                <th>index</th>
+                <th>productname</th>
+                <th>productprice</th>
+                <th>productcategory</th>
+                <th>productdesc</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tablebody">
+            
+
+            
+            </tbody>
+        </table>
+    </div>
+    
+        
+       
+
+
+
+        
+
+
+        <script src="source.js"></script>
+    </body>
+</html>
